@@ -1,0 +1,364 @@
+<!DOCTYPE HTML>
+<html lang="pl">
+<head>
+
+	<title> Kostka Rubika a zwykły człowiek </title>
+	
+	<meta charset="UTF-8" />
+	
+	
+	<link href="style.css" rel="stylesheet" type="text/css" />
+	
+	<link href="background.css" rel="stylesheet" type="text/css" />
+	
+	<link href="css/fontello.css" rel="stylesheet" type="text/css" />
+	
+	<link href="https://fonts.googleapis.com/css?family=Dancing+Script|Lato:400,900&display=swap&subset=latin-ext" rel="stylesheet">
+	
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+	
+	<script src="jquery.scrollTo.min.js"></script>
+	
+	<script src="script.js"></script>
+
+</head>
+<body>
+
+	<div id="start">
+	
+		<figure>
+		
+			<img class="rubik" src="img/Erno_Rubik.jpg" width="35%" height="47%" onclick="zniknij();" alt="Erno Rubik" />
+			<figcaption id="rubik">Ernő Rubik</figcaption>
+			
+		</figure>
+		
+		<input type="Submit" value="Przejdź dalej" onclick="dodawanie();" />
+		
+	</div>
+	
+	<a href="#" id="go-up"></a>
+	
+	<div class="wraper">
+	
+		<header id="header">
+		
+			<h1>LBL vs. Zwykły Człowiek</h1>
+			<p>W dzisiejszym wykładzie przedstawię krótko historię kostki Rubik'a, historię jej 
+			wynalezienia oraz autora jednej z najpopularniejszych zagadek logicznych.
+			Pokażę również metodę, którą każdy zwykły człowiek może ułożyć kostkę Rubika.</p>
+		
+		</header>
+		
+		<nav id="mainnav">
+		
+			<ol>
+			
+				<li><a id="link1" href="#"><i class="icon-right-outline"></i>Krótka historia	 Rubik'a</a></li>
+				<li><a id="link2" href="#"><i class="icon-right-outline"></i>Zarys metody</a></li>
+				<li><a id="link3" href="#"><i class="icon-right-outline"></i>Ciekawostki</a></li>
+				<li><a id="link4" href="#"><i class="icon-right-outline"></i>Cross</a></li>
+				<li><a id="link5" href="#" title="First 2 Layers" ><i class="icon-right-outline"></i>F2L</a></li>
+				<li><a id="link6" href="#" title="Orientation Last Layer" ><i class="icon-right-outline"></i>OLL</a></li>
+				<li><a id="link7" href="#" title="Permutation Last Layer" ><i class="icon-right-outline"></i>PLL</a></li>
+			
+			</ol>
+			
+			<img src="img/rubik.png" alt="Kostka Rubik's" width="250" height="250" id="rbc" />
+			<span class="VS" style="transform: scale(1.5)">VS</span>
+			<i class="icon-adult" id="fontello" ></i>
+		
+		</nav>
+	
+		<main>
+		
+			<article id="Erno" class="art">
+			
+				<header>
+				
+					Ernő Rubik - wynalazca kostki Rubika.
+				
+				</header>
+				
+				<section class="part" >
+				
+					Ukończył studia na kierunku architektura na Politechnice w Budapeszcie 
+					w 1967 i pozostał na uczelni na studiach
+					podyplomowych z rzeźbiarstwa. W latach 1971–1975 pracował jako architekt. 
+					W 1974 wynalazł zabawkę logiczną nazwaną od jego nazwiska kostką Rubika.
+					Erno Rubik był profesorem architektury Budapeszteńskiej Akademii Sztuki
+					Użytkowej. W 1974 roku wymyślił kostkę po to, aby pomóc studentom 
+					w zrozumieniu przestrzeni.Na Węgrzech sprzedano 300 tysięcy kostek w 
+					trakcie dwóch pierwszych lat od wprowadzenia na rynek.
+				
+				</section class="part" >
+				
+			</article>
+			
+			<article id="LBL" class="art">
+			
+				<header>
+				
+					Podstawy i zarys metody LBL
+				
+				</header>
+				
+				<section class="part" >
+				
+					"LBL" jest akronimem od angielskich słów "Layer By Layer", co dosłownie oznacza 
+					"Piętro Po Piętrze", a tłumaczone jest jako "Warstwa Po Warstwie". W metodzie LBL
+					rzeczywiście kostke układamy warstwami - napierw dół kostki , czyli pierwszą warstwę,
+					potem środek, czyli druga warstwa, a na koniec w 2 lub 3 etapach układamy ostatnią
+					warstę kostki, co finalnie powoduje jej ułożenie. Może i brzmi skomplikowanie, ale w 
+					poniżej postaram się udowodnić, że nie jest to wcale takie trudne. 
+				
+				</section class="part" >
+				
+			</article>
+		
+			<article id="Lidership" class="art">
+			
+				<header>
+				
+					Ciekawostki o kostce i jej odmiany
+				
+				</header>
+				
+				<section class="part" >
+				
+					<div class="separate separate-first">
+						<ul>
+						
+							<li> <a href="cubesites/2x2x2i9x9x9.html" target="_blank">
+							Kostki małe i duże<img class="cubes" src="img/2x2x2.jpg" /><img class="cubes" src="img/9x9x9.jpg" />
+							</a> </li>
+							
+							<li> <a href="cubesites/square1.html" target="_blank">
+							Square-1<img class="cubes" src="img/square-1-solved.jpg" /><i class="icon-right-outline"></i><img class="cubes" src="img/square-1-scrambled.jpg"/>
+							</a> </li>
+							
+							<li> <a href="img/piraminx.jpg" target="_blank">
+							Piraminx<img class="cubes" src="img/piraminx.jpg" />
+							</a> </li>
+							
+							<li> <a href="img/mastermorphiks.jpg" target="_blank">
+							Modyfikacja Mastermorphix<img class="cubes" src="img/mastermorphiks.jpg" />
+							</a> </li>
+							
+							<li> <a href="img/megaminx.jpg" target="_blank">
+							Megaminx<img class="cubes" src="img/megaminx.jpg" />
+							</a> </li>
+							
+							<li> <a href="img/petaminx.jpg" target="_blank">
+							Megaminx + trochę hardcoru = Petaminx<img class="cubes" src="img/petaminx.jpg" />
+							</a> </li>
+							
+							<li> <a href="img/skweb.jpg" target="_blank">
+							Skweb<img class="cubes" src="img/skweb.jpg" />
+							</a> </li>
+							
+							<li> <a href="cubesites/mirrorcube.html" target="_blank">
+							Mirror cube <img class="cubes" src="img/mirror-cube-solved.jpg" /> <i class="icon-right-outline"></i><img class="cubes" src="img/mirror-cube-scrambled.jpg" />
+							</a> </li>
+							
+							<li> <a href="img/gear-cube.jpg" target="_blank">
+							Gear Cube<img class="cubes" src="img/gear-cube.jpg" />
+							</a> </li>
+							
+							<li> <a href="https://youtu.be/PRDeSCQoCCM?t=13" target="_blank">
+							Rubiks Magic <img src="img/rubiks-magic.jpg" class="magic" /> 
+							</a> </li>
+							
+						
+						</ul>
+					</div>
+					
+					<div style="position: relative" class="separate">
+					
+					
+						<ol>
+						
+							<li>liczba wszystkich możliwych kombinacji <br /><span onclick="liczby();" style="color: #aaa; text-shadow: -2px 2px #000; cursor: pointer"> wynosi ponad 43 tryliony</span>, co liczymy <br />
+							 tak: 8! * 3^7 * (12!/2) * 2^11</li>
+							 
+							<li>gdyby zebrać tyle Kostek Rubika, by każda<br />  z nich miała
+							inny układ swoich<br /> 26 klocków
+							i ustawić je jedna na<br /> drugiej, taka wieża<br /> miałaby wysokość
+							ponad 246 lat świetlnych.<br/>
+							Dla porównania odległość Ziemi od Słońca <br /> wynosi 5,75 DNIA świetlnego.
+							</li>
+							
+							<li>gdyby zebrać tyle kostek 3x3x3, by <br /> każda z nich miała inny układ<br />
+							i wszystkie układy były wykorzystane,<br /> powstały zbiór
+							ważyłby<br /> (waga 1 kostki to 115g)<br />
+							5 biliardów ton</li>
+						
+						</ol>
+					
+						<div id="liczba">43 252 003 274 489 856 000</div>
+					
+					</div>
+					
+					<div style="clear: both;"></div>
+				
+				</section class="part" >
+				
+			</article>
+			
+			<article id="Cross" class="art cube">
+			
+				<header>
+				
+					Ułożenie krzyża (crossa)
+				
+				</header>
+				
+				<section class="part text" >
+				
+					Pierwszym etapem jest ułożenie krzyża na jednej ze ścianek. Najczęściej jest to
+					ścianka koloru białego lub żółtego. Pierwszy etap jest najciekawszym etapem patrząc
+					na czas. Osobom, które dopiero zaczynają przygodę z kostkami rubika, etap ten zajmuje
+					najmniej czasu. Natomiast osoby, które układają kostki dość szybko często mają problemy
+					z tym etapem. W trakcie jego wykonywania nie korzystamy z żadnych algorytmów.
+					Ważne jest, aby ułożyć od razu "dobry" krzyż, czyli np. element biało-czerwony
+					między białą i czerwoną ścianką<br />
+					<a href="cube-img/cross.jpg" class="a-solving" target="_blank" ><img alt="" class="solving" src="cube-img/cross.jpg" /></a>
+				
+				</section class="part" >
+				
+			</article>
+			
+			<article id="F2L" class="art cube">
+			
+				<header>
+				
+					Ułożenie 2 pierwszych warstw
+				
+				</header>
+				
+				<section class="part text" >
+				
+					<div class="divide">
+					
+						W metodzie podstawowej układamy pierwszą warstwę, czyli pierwszą ściankę, która nie tylko jest
+						biała, ale i (tak jak krzyż) zgodna z sąsiadującymi ściankami. <br />
+						<a href="cube-img/1st-layer.jpg" target="_blank" class="a-solving" ><img class="solving" src="cube-img/1st-layer.jpg" alt="" ></a>
+					
+					</div> 
+					
+					<div class="divide divide-second">
+					
+						W metodzie podstawowej po ułożeniu pierwszej warstwy układamy drugą. W tym etapie musimy 
+						umieścić 4 krawędzie na odpowiednich miejscach i zadbać aby były dobrze zorientowane.
+						Używamy do tego 2 algorytmów. <i><span id="algi1" onclick="licz();" >Pokaż algorytmy</span></i><br />
+						<span id="pole"></span>
+						<a class="no" href="http://kostka-rubika.web.iq.pl/opis_ruchow.html" target="_blank" ><em>Dowiedz się więcej o algorytmach i ich notacji</em></a>
+						<a class="a-solving" href="cube-img/F2L.jpg" target="_blank"><img class="solving" src="cube-img/F2L.jpg" alt="" /></a>
+						W bardziej zaawansowanej matodzie (Fredrich, inaczej CFOP) układamy obie warstwy symultanicznie.
+					
+					</div> 
+					<div style="clear: both;"></div>
+				
+				</section class="part" >
+				
+				
+			</article>
+			
+			<article id="OLL" class="art cube">
+			
+				<header>
+				
+					Orientacja ostatniej warstwy
+				
+				</header>
+				
+				<section class="part text" style="position: relative" >
+				
+					W przedostatnim etapie chcemy sprawić, aby cała ostatnia ścianka była kolorem żółtym
+					do góry.
+						<div style="margin-bottom: 300px;"></div>
+					
+						<div style="text-align: center; vertical-align: middle;" >
+						
+							<a class="a-solving-help" href="cube-img/OLL.jpg" target="_blank" style="top: 70px; left: 360px;">
+							
+								<img src="cube-img/OLL.jpg" alt="" class="solving " />
+							
+							</a>
+						
+							<div class="pls" >
+						
+								<i class="icon-right-outline xd"></i>
+							
+							</div>
+						
+							<a class="a-solving-help" href="cube-img/PLL.jpg" target="_blank" style="top: 70px; right: 400px;" >
+						
+								<img src="cube-img/PLL.jpg" class="solving " style="margin-left: 100px;" alt="" />
+						
+							</a>
+						
+						</div>
+					</br>
+					Możemy tego dokonać na 3 sposoby:
+					<br /><br />
+					Sposób pierwszy: Układmy krzyż na górnej ściance. Gdy mamy kropkę robimy algorytm:<br />
+					F (R U R' U') F'. Mamy wtedy kształt "L". Trzymamy kostkę tak aby był on mniej więcej tak jak
+					"L" obrócone w pionie i wykonujemy ten sam algorytm. Na końcy mamy "minus". Trzymamy by był zwykłą, poziomą
+					kreską i wykonujemy ten sam algorytm.<br />
+					Obracamy kostkę kolorem żółtym do dołu i wykonujemy tzw. sexy move
+					(R U R' U').Obraca do prawą dolną krawędź. Gdy pierwsza jest obrócona (trzeba wykonać
+					dwa, cztery takie ruchy lub poprostu pominąć dany narożnik) robimy ruch D (lub D'),
+					czyli ruch dolną ścianką. Powtarzać dopóki, dopóty wszystkie narożniki nie będą obrócone.
+					Spośób ten jest najwolniejszy.<br />
+					<br />
+					Sposób drugi, tzw. 2-look OLL: Układamy krzyż na górnej ściance (opisane wyżej) i wykonujemy jeden z
+					7 algorytmów, który obróci wszystkie narożniki. Sposób ten jest zdecydowanie szybszy od pierwszego, ale
+					nie tak szybki jak ostatni sposób<br />
+					<br />
+					Sposób trzeci, tzw. full OLL: Od razu po ukończeniu F2L'a wykonujemy jeden z 57 algorytmów, który
+					bez potrzeby układania krzyża obróci zarówno krawędzie, jak i narożniki. Jest to najszybszy sposób, 
+					który jednak wymaga dużej ilości nauki.
+				
+				</section class="part" >
+				
+			</article>
+			
+			<article id="PLL" class="art cube">
+			
+				<header>
+				
+					Permutacja ostatniej warstwy
+				
+				</header>
+				
+				<section class="part text" >
+				
+					Ostatni etap to tak zwana permutacja, czyli "umieszczenie" elementów na ich miejscach bez zmieniania ich orientacji. Są 23 algorytmy nazywane PLLami. Każdy algorytm ma swoją nazwę, czyl ijedną z liter alfabetu. W wypadku występowania kilku wariantów dodawane są małe litery od a do d. Na przykład istnieją 2 permutacje U, które oznaczamy jako Ua i Ub, lub aż 4 permutacje G, czyli Ga, Gb, Gc i Gd.<br/>
+					
+						<figure id="permutacja-j" >
+						
+							<a href="cube-img/Jperm.jpg" target="_blank"><img src="cube-img/Jperm.jpg" alt="permutacja j" /></a>
+							
+							<figcaption>
+							Jedna z permutacji - permutacja Jb
+							</figcaption>
+						
+						</figure>
+				</section class="part" >
+				
+			</article>
+		
+		</main>
+	
+		<footer>
+		
+			Dziękuję za poświęcenie uwagi ciekawemu tematowi kostek Rubika.</br>
+			Wiktor Wiśnieski &copy;  2019
+		
+		</footer>
+	
+	</div>
+
+</body>
+<html>
